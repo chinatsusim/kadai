@@ -1,0 +1,241 @@
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+html{
+  max-height: 100vh!important;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+
+body{
+  font-family: "jost", "Zen Kaku Gothic New", sans-serif !important;
+  color:#4b4b4b!important;
+  width:400px;
+  max-width: 100%;
+  margin:auto;
+  max-height: 100vh!important;
+  background-color: #F1EFE7;
+  text-align: center;
+}
+
+main {
+  padding-bottom:80px;
+  padding-top:90px;
+}
+
+header{
+  font-weight: 900;
+  padding: 10px;
+  margin:auto;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:50px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+header img{
+  width: 180px;
+  margin:auto;
+  vertical-align: middle;
+}
+
+h1{ font-size:26px;}
+
+h2 { font-size: 20px;}
+
+h3{
+  font-size:14px;
+  text-align: center;
+}
+
+form.keyword{
+  margin-top: 30px;
+  height:30px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.keyword input{
+  width: 82%;
+  height: 100%;
+  margin-right: 10px;
+  border: 1.6px solid #63676b;
+}
+
+form.keyword button{
+  height: 116%;
+  width: 14%;
+  margin:0;
+  background-color: #63676b;
+  border: 2px solid #63676b!important;
+  color:#fff;
+  cursor: pointer;
+}
+
+form.keyword button .material-symbols-outlined{
+  font-size:24px;
+  color:#fff;
+}
+
+
+.result{
+  text-align: left;
+  margin: auto 20px;
+  font-size:14px;
+  margin:20px auto;
+}
+
+.result div{
+  margin-bottom:8px;
+}
+
+#books{
+  column-count:2;
+}
+
+.bookinfo{
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding:20px 10px;
+  border-radius: 5px;
+  font-size:12px;
+  break-inside: avoid;
+}
+
+.bookinfo img{
+  width:100px;
+  text-align: center;
+  margin: auto;
+}
+
+.bookprofile{
+  text-align: left!important;
+  overflow-wrap: break-word;
+}
+
+.description{
+  text-align: left!important;
+  margin-bottom: 8px;
+}
+
+#popup {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  /* vertical-align: middle; */
+  width: 80%;
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#popup-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  /* vertical-align: middle; */
+  width: 80%;
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #606060;
+  color:#fff;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin:auto;
+  height: 70px;
+}
+
+footer ul.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+  padding: 0;
+  margin: auto;
+}
+
+footer ul.menu a{
+  text-decoration: none;
+  color:#4b4b4b!important;
+  flex: 1;
+  text-align: center;
+  list-style: none;
+  padding: 20px 0;
+  font-size:12px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size:8px;
+  color:#495057;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right:5px;
+}
+
+
+.delete {
+  background-color: #63676b;
+  color:#fff;
+  border:none;
+  cursor: pointer;
+  margin:8px;
+  vertical-align: middle;
+  padding:4px 10px;
+  border-radius: 2px;
+}
+
+.delete .material-symbols-outlined{
+  font-size:16px;
+  color:#fff;
+}
+
+.add {
+  /* background-color: #63676b; */
+  color:#63676b;
+  border:none;
+  cursor: pointer;
+  margin:8px;
+  vertical-align: middle;
+  padding:4px 10px;
+  border-radius: 2px;
+}
+
+.add .material-symbols-outlined{
+  font-size:16px;
+  color:#63676b;
+}
