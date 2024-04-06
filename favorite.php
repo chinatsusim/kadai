@@ -10,11 +10,7 @@ $thumbnail = $_POST["thumbnail"];
 $uid = '123456789999';
 
 //2. DB接続します
-try {
-  $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
-} catch (PDOException $e) {
-  exit('DB_CONNECT:'.$e->getMessage());
-}
+require 'connect.php';
 
 //３．データ登録SQL作成
 $sql = "INSERT INTO gs_kadai_02(isbn,title,authors,publisher,publishedDate,description,thumbnail,uid,registDate)VALUES(:isbn,:title,:authors,:publisher,:publishedDate,:description,:thumbnail,:uid,sysdate());";

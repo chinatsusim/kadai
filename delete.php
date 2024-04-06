@@ -3,12 +3,7 @@
 $isbn = $_POST["isbn"];
 
 //2. DB接続します
-try {
-  //Password:MAMP='root',XAMPP=''
-  $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
-} catch (PDOException $e) {
-  exit('DB_CONNECT:'.$e->getMessage());
-}
+require 'connect.php';
 
 //３．データ登録SQL作成
 $sql = "DELETE FROM gs_kadai_02 WHERE isbn=:isbn";

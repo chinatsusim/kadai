@@ -2,12 +2,7 @@
 <!-- お気に入り表示処理 -->
 <?php
 // 1.  DB接続します
-// localhost
-try {
-$pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
-} catch (PDOException $e) {
-exit('DB_CONNECT:'.$e->getMessage());
-}
+require 'connect.php';
 
 //２．データ登録SQL作成
 $sql = "SELECT * FROM gs_kadai_02 ORDER BY registDate desc";
